@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<link rel="stylesheet" href="input.css" />
+	<link href="../output.css" rel="stylesheet" />
+</head>
+
+<body class="break-words">
+	<div class="flex flex-col items-center justify-center w-full max-w-5xl mx-auto py-12 md:py-16 lg:py-20">
+		<div class="flex items-center justify-between w-full mb-8 px-4">
+			<h1 class="text-2xl my-3 font-bold">Invoice Report April 2024</h1>
+			<div class="flex">
+				<div class="w-[200px] h-[100px] bg-gray-800"></div>
+			</div>
+		</div>
+		<div class="w-full overflow-x-auto">
+			<div class="relative w-full overflow-auto">
+				<table class="w-full caption-bottom text-sm">
+					<thead class="[&amp;_tr]:border-b">
+						<tr
+							class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+							<th
+								class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+								Invoice #
+							</th>
+							<th
+								class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+								Client
+							</th>
+							<th
+								class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+								Issue Date
+							</th>
+							<th
+								class="h-12 px-4 align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 text-right">
+								Amount
+							</th>
+						</tr>
+					</thead>
+					<tbody class="[&amp;_tr:last-child]:border-0">
+						<tr
+							class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+							<td
+								class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium">
+								INV-001</td>
+							<td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+								TUV Austria.</td>
+							<td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+								2023-04-01</td>
+							<td
+								class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right">
+								1,500.00 SAR</td>
+						</tr>
+					</tbody>
+					<tfoot class="border-t bg-muted/50 font-medium [&amp;>tr]:last:border-b-0">
+						<tr
+							class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+							<td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium text-right"
+								colspan="3">
+								Total:
+							</td>
+							<td
+								class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium text-right">
+								11,800.00 SAR</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+<style>
+	@page {
+		size: A5;
+		margin: 10px
+	}
+
+	@media print {
+		#container {
+			margin: 18px 10px 14px 10px;
+		}
+
+		/* ... the rest of the rules ... */
+	}
+</style>
+
+</html>
